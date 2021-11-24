@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap");
+
+@font-face {
+  font-family: "genty_demoregular";
+  src: url("./webfonts/genty/GentyDemo-Regular.otf") format("woff2"),
+    url("gentydemo-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*** links ***/
+
+.nav__link:link {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.nav__link:visited {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.nav__link:active {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: slateblue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.footer__link:link {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.footer__link:visited {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.footer__link:active {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/**** nav bar ****/
+.nav {
+  transition: 0.3s all ease;
+  position: absolute;
+  width: 260px;
+  left: -260px;
+  height: 140%;
+  background: rgba(1, 1, 1, 0.233);
+  z-index: 9999;
+}
+
+.open {
+  left: 0px;
+  position: fixed;
+}
+
+.menu {
+  list-style-type: none;
+}
+
+.menu__item {
+  font-size: 1.4rem;
+  color: #eee;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+  padding: 1.2rem;
+  text-transform: uppercase;
+  transition: 0.3s all ease;
+}
+
+.menu__item:hover {
+  background-image: repeating-linear-gradient(
+    150deg,
+    #712f77,
+    #bf59c9,
+    #005dd4,
+    #079066,
+    #fdfc59,
+    #f59201,
+    #e01e15,
+    #bb150d
+  );
+  color: black;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+/**** hamburger icon ****/
+.hamburger {
+  position: absolute;
+  top: 10px;
+  right: -50px;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  background: whitesmoke;
+  margin: 6px 0;
+  height: 6px;
+  width: 36px;
+  border-radius: 2px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.change.first-bar {
+  top: 11px;
+  transform: rotate(45deg);
+}
+.change.second-bar {
+  opacity: 0;
+}
+.change.third-bar {
+  bottom: 13px;
+  transform: rotate(-45deg);
+}
+
+/********** Main Content *********/
+body {
+  align-items: center;
+  justify-content: center;
+  font-family: "Shippori Antique", sans-serif;
+  background-image: url(https://mmo.aiircdn.com/386/6124f2ddd191d.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 960px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0 auto;
+  background-color: rgba(1, 1, 1, 0.233);
+  height: 140vh;
+}
+
+.content {
+  transition: 0.3s all ease;
+}
+
+.shift {
+  margin-left: 260px;
+}
+
+.content__heading {
+  text-align: center;
+  font-size: 8rem;
+  color: whitesmoke;
+  font-family: "genty_demoregular", "Times New Roman";
+  line-height: 8rem;
+  padding-top: 5vh;
+}
+
+@media (max-width: 375px) {
+  .content__heading {
+    font-size: 4rem;
+    margin: auto;
+  }
+}
+
+.content__details {
+  padding: 1rem;
+  letter-spacing: 0.5px;
+  text-align: right;
+  margin-bottom: 1rem;
+  margin-top: -2rem;
+  color: whitesmoke;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+#map {
+  height: 70vh;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+hr {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 1px;
+}
+
+.btn:hover {
+  background-image: repeating-linear-gradient(
+    150deg,
+    #712f77,
+    #bf59c9,
+    #005dd4,
+    #079066,
+    #fdfc59,
+    #f59201,
+    #e01e15,
+    #bb150d
+  );
+  color: black;
+  transition: 0.3s all ease;
+  font-weight: 200;
+  border: 0px;
+}
+
+.btn {
+  background-color: #ffffff00;
+  transform: scale(1);
+  transition: transform 250ms;
+  display: inline-block;
+  padding: 0.9em 1.5em;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-radius: 30px;
+  outline: 0px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: scale(1.1);
+}
+
+.rainbow_buttons {
+  display: flex;
+  justify-content: center;
+  padding: 0.7em;
+  margin-bottom: 1rem;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.btn_filled {
+  background-image: repeating-linear-gradient(
+    150deg,
+    #712f77,
+    #bf59c9,
+    #005dd4,
+    #079066,
+    #fdfc59,
+    #f59201,
+    #e01e15,
+    #bb150d
+  );
+  color: black;
+  transition: 0.3s all ease;
+  font-weight: 200;
+  border: 0px;
+  background-color: #ffffff00;
+  transform: scale(1);
+  transition: transform 250ms;
+  display: inline-block;
+  padding: 0.9em 1.5em;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  outline: 0px;
+  cursor: pointer;
+}

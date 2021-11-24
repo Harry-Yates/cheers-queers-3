@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap");
+
+@font-face {
+  font-family: "genty_demoregular";
+  src: url("./webfonts/genty/GentyDemo-Regular.otf") format("woff2"),
+    url("gentydemo-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*** links ***/
+.nav__link:link {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+.nav__link:visited {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+.nav__link:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+.nav__link:active {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover {
+  color: dodgerblue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.footer__link:link {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+.footer__link:visited {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+.footer__link:hover {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.footer__link:active {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+/**** nav bar ****/
+.nav {
+  transition: 0.3s all ease;
+  position: absolute;
+  width: 260px;
+  left: -260px;
+  height: 140%;
+  background: rgba(1, 1, 1, 0.233);
+  z-index: 9999;
+}
+.open {
+  left: 0px;
+  position: fixed;
+}
+.menu {
+  list-style-type: none;
+}
+.menu__item {
+  font-size: 1.4rem;
+  color: #eee;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+  padding: 1.2rem;
+  text-transform: uppercase;
+  transition: 0.3s all ease;
+}
+.menu__item:hover {
+  background-image: repeating-linear-gradient(
+    150deg,
+    #712f77,
+    #bf59c9,
+    #005dd4,
+    #079066,
+    #fdfc59,
+    #f59201,
+    #e01e15,
+    #bb150d
+  );
+  color: black;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+/**** hamburger icon ****/
+.hamburger {
+  position: absolute;
+  top: 10px;
+  right: -50px;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+.hamburger span {
+  display: block;
+  background: whitesmoke;
+  margin: 6px 0;
+  height: 6px;
+  width: 36px;
+  border-radius: 2px;
+  position: relative;
+  transition: 0.3s;
+}
+.change.first-bar {
+  top: 11px;
+  transform: rotate(45deg);
+}
+.change.second-bar {
+  opacity: 0;
+}
+.change.third-bar {
+  bottom: 13px;
+  transform: rotate(-45deg);
+}
+/********** Main Content *********/
+body {
+  align-items: center;
+  justify-content: center;
+  font-family: "Shippori Antique", sans-serif;
+  background-image: url(https://mmo.aiircdn.com/386/6124f2ddd191d.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container {
+  max-width: 960px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0 auto;
+  background-color: rgba(1, 1, 1, 0.233);
+  height: 200vh;
+}
+.container__contact {
+  max-width: 960px;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  margin: 0 auto;
+  background-color: rgba(1, 1, 1, 0.233);
+  height: 140vh;
+}
+.content {
+  transition: 0.3s all ease;
+}
+.shift {
+  margin-left: 260px;
+}
+.content__heading {
+  text-align: center;
+  font-size: 8rem;
+  color: whitesmoke;
+  font-family: "genty_demoregular", "Times New Roman";
+  line-height: 8rem;
+  padding-top: 5vh;
+}
+.content__details {
+  padding: 1rem;
+  letter-spacing: 1px;
+  text-align: center;
+  color: whitesmoke;
+}
+.content__details__about {
+  padding: 1rem;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.cq__text {
+  font-size: 1.5rem;
+}
+.cq__text:hover {
+  font-size: 1.5rem;
+  background-image: repeating-linear-gradient(
+    150deg,
+    violet,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red,
+    red,
+    red
+  );
+  background-clip: unset;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+#map {
+  height: 80vh;
+}
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+}
+.rufus {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  margin: auto;
+}
+.laura {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  margin: auto;
+}
+.lisa {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  margin: auto;
+}
+.hyperisland__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: auto;
+  padding: 5vh;
+}
+.image__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 18.1rem;
+  max-height: 18.1rem;
+  margin: auto;
+  border-radius: 50%;
+}
+.history {
+  padding: 1em;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem;
+  letter-spacing: 1px;
+  color: whitesmoke;
+}
+h4 {
+  color: whitesmoke;
+}
+.fas {
+  font-size: 1.5rem;
+}
+.history__year {
+  padding-left: 1vh;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+.history__text {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding-left: 20vh;
+  margin-top: -2.6rem;
+}
